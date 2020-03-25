@@ -5,6 +5,8 @@ import PageTwo from '../views/PageTwo'
 import PageThree from '../views/PageThree'
 import PageFour from '../views/PageFour'
 import Index from '../views/Index'
+import DiffQuery from '../views/DiffQuery'
+import About from '../views/About'
 
 Vue.use(VueRouter)
 
@@ -24,6 +26,16 @@ const routes = [
         path:'/pageTwo',
         name:'其他',
         component: PageTwo
+      },
+      {
+        path:'/diffQuery',
+        name:'分类日志对比结果',
+        component: DiffQuery
+      },
+      {
+        path:'/about',
+        name:'树状分类',
+        component: About
       }
     ]
   },
